@@ -1,0 +1,12 @@
+Check if a vertex in a tree is an ancestor of some other vertex:
+
+Find the lowest common ancestor (LCA) of two vertices.
+
+Topological sorting
+
+Check whether a given graph is acyclic and find cycles in a graph. (As mentioned above by counting back edges in every connected
+components).
+
+Find strongly connected components in a directed graph:
+
+Find bridges in an undirected graph:

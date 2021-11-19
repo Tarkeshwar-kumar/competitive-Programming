@@ -19,12 +19,12 @@ current vertex back to the source vertex, we have found the shortest cycle conta
 and start a new BFS from the next vertex. From all such cycles (at most one from each BFS) choose the shortest.
 
 Find all the edges that lie on any shortest path between a given pair of vertices (a,b). To do this, run two breadth first searches: one from0
-a and one from b. Let da[] be the array containing shortest distances obtained from the first BFS (from a) and db[] be the array containing
+a and one from b. Let da[] be the array containing the shortest distances obtained from the first BFS (from a) and db[] be the array containing
 shortest distances obtained from the second BFS from b. Now for every edge (u,v) it is easy to check whether that edge lies
 on any shortest path between a and b: the criterion is the condition da[u]+1+db[v]=da[b].
 
 Find all the vertices on any shortest path between a given pair of vertices (a,b). To accomplish that, run two breadth first searches: one
- from a and one from b. Let da[] be the array containing shortest distances obtained from the first BFS (from a) and db[] be the array
+ from a and one from b. Let da[] be the array containing the shortest distances obtained from the first BFS (from a) and db[] be the array
  containing shortest distances obtained from the second BFS (from b). Now for each vertex it is easy to check whether it lies on any shortest
  path between a and b: the criterion is the condition da[v]+db[v]=da[b].
 
